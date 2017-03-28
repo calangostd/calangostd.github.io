@@ -1,8 +1,17 @@
 .font-calango {
-	font-family: 'TekoRegular';
+    font-family: 'TekoRegular';
 }
 
 @font-face {
-	font-family: 'TekoRegular';
-	src: url('../fonts/Teko-Regular.ttf');
+    font-family: 'TekoRegular';
+    src: url('../fonts/Teko-Regular.ttf');
+}
+
+#cover-top-title {
+    margin-top: 600px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
