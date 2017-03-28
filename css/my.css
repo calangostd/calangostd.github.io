@@ -55,7 +55,12 @@ a:hover {
 }
 
 #cover-top-title {
-    margin-top: 600px;
+    position: absolute;
+    margin-top: 17%;
+}
+
+#cover-top-container {
+    margin-right: 65%;
 }
 
 #scroll-image {

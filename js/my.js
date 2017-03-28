@@ -1,16 +1,19 @@
 $(document).ready(function() {
     function animateScrollDown() {
-        $('#scroll-image').animate({ 'top': '10' }, {
+        $('#scroll-image').animate({
+            'top': '10'
+        }, {
             duration: '1000',
             complete: function() {
-                $('#scroll-image').animate({ top: 0 }, {
+                $('#scroll-image').animate({
+                    top: 0
+                }, {
                     duration: 1000,
                     complete: animateScrollDown
                 });
             }
         });
     }
-
 
     function translate() {
         var mLanguage = activeLanguage.spacejay;
@@ -25,6 +28,12 @@ $(document).ready(function() {
         $(".release-date").html(mLanguage["release-date"]);
         $(".download").html(mLanguage["download"]);
     }
+
+
+    //alert("Window: " + $(window).height());
+    //alert($(document).height());
+
+
 
     translate();
     animateScrollDown();
