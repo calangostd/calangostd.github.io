@@ -1,17 +1,63 @@
-.font-calango {
-    font-family: 'TekoRegular';
-}
+/*Color-pallet: 
+Yellow:      #FCEBB6
+Brow:        #5E412F
+Orange:      #F07818
+Dark-Yellow: #F0A830
+Green:        #78C0A8
+*/
 
 @font-face {
     font-family: 'TekoRegular';
     src: url('../fonts/Teko-Regular.ttf');
 }
 
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: #F0A830 !important;
+    font-weight: bold;
+    margin-top: 0px;
+    font-size: 32px;
+}
+
+h3 {
+    margin-top: 0px;
+    color: #F07818 !important;
+}
+
+a {
+    color: #5E412F;
+}
+
+a:hover {
+    color: #5A5000;
+    text-decoration: none;
+}
+
+.press-kit {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.font-calango {
+    font-family: 'TekoRegular';
+}
+
+.release-date {
+    font-weight: bold;
+}
+
+.download {
+    font-weight: bold;
+}
+
 #cover-top-title {
     margin-top: 600px;
 }
 
-h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+#scroll-image {
+    position: relative;
 }

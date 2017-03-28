@@ -7,6 +7,8 @@
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/control-cookies.js"></script>
+    <script type="text/javascript" src="js/language.js"></script>
     <script type="text/javascript" src="js/my.js"></script>
 
     <!-- CSS -->
@@ -17,7 +19,7 @@
 
 </head>
 
-<body>
+<body style="background-image: url(background.png)">
     <!-- COVER -->
     <div class="cover">
         <!-- MENU -->
@@ -36,11 +38,13 @@
         <div class="cover-image" style="background-image: url(cover.jpg);"></div>
         <div class="container">
             <div class="row" id="cover-top-title">
-
                 <div class="col-md-12 text-center">
                     <img src="calango-logo.png" height="70px" />
                     <h1 class="text-inverse font-calango">CALANGO STUDIO</h1>
                     <p class="text-inverse">Brazilian indie game studio. Simple and different games ❤</p>
+                    <div>
+                        <img id="scroll-image" src="scroll.png" height="30px" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,8 +56,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h5 class="text-muted">Our unique</h5>
-                    <h1 class="text-success">Games</h1>
+                    <p class="text-muted">Our unique</p>
+                    <h2>Games</h2>
                 </div>
             </div>
             <div class="row">
@@ -63,11 +67,12 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="text-info">GAME 1</h1>
-                    <h3 class="text-muted">A subtitle</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                    <h3>GAME 1</h3>
+                    <p></p>
+
+                    <span class="release-date"></span>
+                    <span id="rupert-release-date"></span>
+
                 </div>
             </div>
         </div>
@@ -78,15 +83,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/i__1Z5a9Sak" allowfullscreen=""></iframe>
+                        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/QnIPNls4XvE" allowfullscreen=""></iframe>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="text-info">GAME 2</h1>
-                    <h3 class="text-muted">A subtitle</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                    <h3 id="space-jay-title">Space Jay</h3>
+                    <p id="space-jay-content-1"></p>
+                    <p id="space-jay-content-2"></p>
+                    <p id="space-jay-content-3"></p>
+                    <p id="space-jay-content-4"></p>
+
+
+                    <span class="release-date"></span>
+                    <span id="space-jay-release-date"></span>
+                    <br/>
+                    <span class="download"></span>
+                    <a href="https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk" target="_blank"> <i class="fa fa-android"></i> Play Store</a>
+                    <br/>
+                    <a class="press-kit" href="https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk" target="_blank">Press-kit</a>
                 </div>
             </div>
         </div>
@@ -98,7 +112,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-success">About us</h1>
+                    <h2>About us</h2>
                 </div>
             </div>
             <div class="row">
@@ -107,13 +121,22 @@
                         Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud
                     </p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 hidden-sm hidden-xs">
                     <p>
                         <a class="twitter-timeline" href="https://twitter.com/calangoSTD" data-height="800">&nbsp; Tweets by calangoSTD&nbsp;</a>
                         <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </p>
                 </div>
+
+                <div class="hidden-md hidden-lg hidden-xl">
+                    <p>
+                        <a class="twitter-timeline" href="https://twitter.com/calangoSTD" data-height="400">&nbsp; Tweets by calangoSTD&nbsp;</a>
+                        <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </p>
+                </div>
+
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -131,7 +154,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1 class="text-success">Contact</h1>
+                    <h2 class="text-success">Contact</h2>
                     <h3 class="text-muted">A subtitle</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
                         eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
@@ -151,15 +174,15 @@
             <div class="row text-center">
                 <div class="col-xs-4 text-center">
                     <a href="https://twitter.com/calangoSTD"><i
-						class="fa fa-4x fa-fw fa-twitter text-success"></i></a>
+						class="fa fa-4x fa-fw fa-twitter "></i></a>
                 </div>
                 <div class="col-xs-4 text-center">
                     <a href="https://www.facebook.com/TheCalangoStudio/"><i
-						class="fa fa-4x fa-facebook fa-fw text-success"></i></a>
+						class="fa fa-4x fa-facebook fa-fw "></i></a>
                 </div>
                 <div class="col-xs-4 text-center">
                     <a href="https://play.google.com/store/apps/dev?id=6375179153164215003"><i
-						class="fa fa-4x fa-android fa-fw hub text-success"></i></a>
+						class="fa fa-4x fa-android fa-fw hub "></i></a>
                 </div>
             </div>
         </div>
