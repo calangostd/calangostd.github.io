@@ -41,7 +41,7 @@
                 <div class="col-md-12 text-center">
                     <img src="calango-logo.png" height="70px" />
                     <h1 class="text-inverse font-calango">CALANGO STUDIO</h1>
-                    <p class="text-inverse">Brazilian indie game studio. Simple and different games ❤</p>
+                    <p id="cover-subtitle" class="text-inverse"></p>
                     <div>
                         <img id="scroll-image" src="scroll.png" height="30px" />
                     </div>
@@ -56,8 +56,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-muted">Our unique</p>
-                    <h2>Games</h2>
+                    <p id="games-subtitle" class="text-muted"></p>
+                    <h2 id="games-title"></h2>
                 </div>
             </div>
             <div class="row">
@@ -93,14 +93,16 @@
                     <p id="space-jay-content-3"></p>
                     <p id="space-jay-content-4"></p>
 
-
                     <span class="release-date"></span>
                     <span id="space-jay-release-date"></span>
                     <br/>
-                    <span class="download"></span>
-                    <a href="https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk" target="_blank"> <i class="fa fa-android"></i> Play Store</a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk" target="_blank">
+                        <span class="download"></span> (
+                        <i class="fa fa-android"></i> Play Store)
+                    </a>
                     <br/>
-                    <a class="press-kit" href="https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk" target="_blank">Press-kit</a>
+                    <a class="press-kit" href="pdf/spacejay.pdf" target="_blank">Press-kit</a>
                 </div>
             </div>
         </div>
@@ -112,14 +114,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>About us</h2>
+                    <h2 id="about-title"></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud
-                    </p>
+                <div class="about-content col-md-6">
+                    <p id="about-content-1"> </p>
+                    <br/>
+                    <p id="about-content-2"> </p>
+                    <br/>
+                    <p id="about-content-3"> </p>
+                    <br/>
+                    <p id="about-content-4"> </p>
                 </div>
                 <div class="col-md-6 hidden-sm hidden-xs">
                     <p>
@@ -138,10 +144,11 @@
                 </div>
 
             </div>
-            <div class="row">
+            <div class="row" style="display: none">
                 <div class="col-md-12">
-                    <div class="page-header">
-                        <h1>Download our presskit</h1>
+                    <div class="presskit-content page-header">
+                        <a id="about-presskit" href=""></a>
+                        <a href=""><i class="fa fa-download "></i></a>
                     </div>
                 </div>
             </div>
@@ -153,15 +160,16 @@
     <div class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <h2 class="text-success">Contact</h2>
-                    <h3 class="text-muted">A subtitle</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                        eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                <div class="col-md-12">
+                    <h2 id="contact-title"></h2>
                 </div>
-                <div class="col-md-6">
-                    <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
+            </div>
+            <div class="row">
+                <div class="contact-content col-md-6">
+                    <p id="contact-content-1"></p>
+                </div>
+                <div class="email col-md-6">
+                    <a href="mailto:calangostd@gmail.com"> e-mail : calangostd@gmail.com </a>
                 </div>
             </div>
         </div>

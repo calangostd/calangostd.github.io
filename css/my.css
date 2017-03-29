@@ -52,6 +52,23 @@ a:hover {
 
 .download {
     font-weight: bold;
+    font-size: 22px;
+}
+
+.about-content {
+    font-size: 20px;
+}
+
+.contact-content {
+    font-size: 20px;
+}
+
+.email {
+    font-size: 28px;
+}
+
+.presskit-content {
+    font-size: 32px;
 }
 
 #cover-top-title {
@@ -60,9 +77,15 @@ a:hover {
 }
 
 #cover-top-container {
-    margin-right: 65%;
+    margin-right: 66%;
 }
 
 #scroll-image {
     position: relative;
+}
+
+@media(max-width:576px) {
+    #cover-top-title {
+        margin-top: 10%;
+    }
 }

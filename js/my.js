@@ -16,7 +16,19 @@ $(document).ready(function() {
     }
 
     function translate() {
-        var mLanguage = activeLanguage.spacejay;
+        var mLanguage;
+
+        //Cover
+        mLanguage = activeLanguage.cover;
+        $("#cover-subtitle").html(mLanguage["subtitle"]);
+
+        //Games
+        mLanguage = activeLanguage.games;
+        $("#games-title").html(mLanguage["title"]);
+        $("#games-subtitle").html(mLanguage["subtitle"]);
+
+        //SpaceJay
+        mLanguage = activeLanguage.spacejay;
         $("#space-jay-title").html(mLanguage["title"]);
         $("#space-jay-release-date").html(mLanguage["release-date"]);
         $("#space-jay-content-1").html(mLanguage["content-1"]);
@@ -24,16 +36,24 @@ $(document).ready(function() {
         $("#space-jay-content-3").html(mLanguage["content-3"]);
         $("#space-jay-content-4").html(mLanguage["content-4"]);
 
+        //About us
+        mLanguage = activeLanguage.about;
+        $("#about-title").html(mLanguage["title"]);
+        $("#about-content-1").html(mLanguage["content-1"]);
+        $("#about-content-2").html(mLanguage["content-2"]);
+        $("#about-content-3").html(mLanguage["content-3"]);
+        $("#about-content-4").html(mLanguage["content-4"]);
+        $("#about-presskit").html(mLanguage["presskit"]);
+
+        //Contact
+        mLanguage = activeLanguage.contact;
+        $("#contact-title").html(mLanguage["title"]);
+        $("#contact-content-1").html(mLanguage["content-1"]);
+        //General
         mLanguage = activeLanguage.general;
         $(".release-date").html(mLanguage["release-date"]);
         $(".download").html(mLanguage["download"]);
     }
-
-
-    //alert("Window: " + $(window).height());
-    //alert($(document).height());
-
-
 
     translate();
     animateScrollDown();
