@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+    $("#menu-eng").on("click", function() {
+        setLanguage("eng");
+    });
+    $("#menu-ptbr").on("click", function() {
+        setLanguage("ptbr");
+    });
+
     function animateScrollDown() {
         $('#scroll-image').animate({
             'top': '10'
@@ -26,6 +34,15 @@ $(document).ready(function() {
         mLanguage = activeLanguage.games;
         $("#games-title").html(mLanguage["title"]);
         $("#games-subtitle").html(mLanguage["subtitle"]);
+
+        //Rupert
+        mLanguage = activeLanguage.rupert;
+        $("#rupert-title").html(mLanguage["title"]);
+        $("#srupert-release-date").html(mLanguage["release-date"]);
+        $("#rupert-content-1").html(mLanguage["content-1"]);
+        $("#rupert-content-2").html(mLanguage["content-2"]);
+        $("#rupert-content-3").html(mLanguage["content-3"]);
+        $("#rupert-content-4").html(mLanguage["content-4"]);
 
         //SpaceJay
         mLanguage = activeLanguage.spacejay;

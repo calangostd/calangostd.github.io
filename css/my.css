@@ -84,8 +84,18 @@ a:hover {
     position: relative;
 }
 
+#menu {
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    font-size: 24px;
+}
+
 @media(max-width:576px) {
     #cover-top-title {
         margin-top: 10%;
+    }
+    #menu {
+        width: auto;
     }
 }

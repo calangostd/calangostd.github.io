@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <title>Calango Studio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,22 +19,23 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/my.css" rel="stylesheet" type="text/css">
 
+    <!-- ICO -->
+    <link rel="icon" type="image/png" href="ico_152x.png" />
+
 </head>
 
 <body style="background-image: url(background.png)">
     <!-- COVER -->
     <div class="cover">
         <!-- MENU -->
-        <div class="navbar">
-            <div class="container">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">English</a></li>
-                        <li class="active"><a href="#">Português</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div id="menu" class="container">
+            <ul class="nav navbar-nav navbar-right">
+                <li id="menu-eng" class=""><a href="#">English</a></li>
+                <li id="menu-ptbr" class=""><a href="#">Português</a></li>
+            </ul>
         </div>
+
+
 
         <!-- COVER -->
         <div class="cover-image" style="background-image: url(cover.jpg);"></div>
@@ -67,12 +70,22 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>GAME 1</h3>
-                    <p></p>
+                    <h3 id="rupert-title"></h3>
+                    <p id="rupert-content-1"></p>
+                    <p id="rupert-content-2"></p>
+                    <p id="rupert-content-3"></p>
+                    <p id="rupert-content-4"></p>
 
                     <span class="release-date"></span>
                     <span id="rupert-release-date"></span>
+                    <br/>
 
+                    <a href="https://play.google.com/store/apps/details?id=com.calangostudio.spacejayfreermk" target="_blank">
+                        <span class="download"></span> (
+                        <i class="fa fa-android"></i> Play Store)
+                    </a>
+                    <br/>
+                    <a class="press-kit" href="pdf/rupert.pdf" target="_blank">Press-kit</a>
                 </div>
             </div>
         </div>
@@ -169,7 +182,7 @@
                     <p id="contact-content-1"></p>
                 </div>
                 <div class="email col-md-6">
-                    <a href="mailto:calangostd@gmail.com"> e-mail : calangostd@gmail.com </a>
+                    <a href="mailto:hi@calangostudio.com"> e-mail : hi@calangostudio.com </a>
                 </div>
             </div>
         </div>
@@ -181,15 +194,15 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-xs-4 text-center">
-                    <a href="https://twitter.com/calangoSTD"><i
+                    <a href="https://twitter.com/calangoSTD" target="_blank"><i
 						class="fa fa-4x fa-fw fa-twitter "></i></a>
                 </div>
                 <div class="col-xs-4 text-center">
-                    <a href="https://www.facebook.com/TheCalangoStudio/"><i
+                    <a href="https://www.facebook.com/TheCalangoStudio/" target="_blank"><i
 						class="fa fa-4x fa-facebook fa-fw "></i></a>
                 </div>
                 <div class="col-xs-4 text-center">
-                    <a href="https://play.google.com/store/apps/dev?id=6375179153164215003"><i
+                    <a href="https://play.google.com/store/apps/dev?id=6375179153164215003" target="_blank"><i
 						class="fa fa-4x fa-android fa-fw hub "></i></a>
                 </div>
             </div>
