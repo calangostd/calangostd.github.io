@@ -38,7 +38,7 @@ $(document).ready(function() {
         //Rupert
         mLanguage = activeLanguage.rupert;
         $("#rupert-title").html(mLanguage["title"]);
-        $("#srupert-release-date").html(mLanguage["release-date"]);
+        $("#rupert-release-date").html(mLanguage["release-date"]);
         $("#rupert-content-1").html(mLanguage["content-1"]);
         $("#rupert-content-2").html(mLanguage["content-2"]);
         $("#rupert-content-3").html(mLanguage["content-3"]);

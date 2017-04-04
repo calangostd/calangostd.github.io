@@ -13,6 +13,7 @@ var language = {
         },
         rupert: {
             'title': 'Rupert',
+            'release-date': '2017',
             'content-1': 'Guie Rupert até sua missão de recuperar um misterioso objeto roubado de seu amigo.',
             'content-2': 'Controlar Rupert é simples e diferente de outras experiências mobile, não existe ataques ou armas, utilize apenas sua habilidade e raciocínio para completar os cenários.',
             'content-3': 'Inspirado em jogos da era do 16bits, toda sua simplicidade faz qualquer tipo de jogador se encantar e se sentir desafiado.',
@@ -53,6 +54,7 @@ var language = {
         },
         rupert: {
             'title': 'Rupert',
+            'release-date': '2017',
             'content-1': 'Guide Rupert to his quest to retrieve a mysterious object stolen from his friend.',
             'content-2': 'Controlling Rupert is simple and different from other mobile experiences, there are no attacks or weapons, just use your ability and logic to complete the scenarios.',
             'content-3': 'Inspired by 16bits era games, all its simplicity makes any type of player delight and feel challenged.',
@@ -83,12 +85,11 @@ var language = {
 
 function getLanguage() {
     var mLanguage = getCookie("language");
-    var mActiveLanguage = language.ptbr;
-
+    var mActiveLanguage = language.en;
     if (!mLanguage) {
         //Set English if no have set language
         setCookie("language", 2, 99);
-        mLanguage = 1;
+        mLanguage = 2;
     }
 
     if (mLanguage == 1) {
