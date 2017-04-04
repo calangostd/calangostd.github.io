@@ -36,13 +36,13 @@
             </ul>
         </div>
 
-
-
-        <!-- COVER -->
+        <!-- COVER-IMAGE -->
         <div class="cover-image" style="background-image: url(cover.jpg);"></div>
         <div class="container-fluid" id="cover-top-container">
             <div class="row" id="cover-top-title">
-                <div class="col-md-12 text-center">
+
+                <!-- DESKTOP MODE -->
+                <div class="col-md-12 hidden-sm hidden-xs text-center">
                     <img src="calango-logo.png" height="70px" />
                     <h1 class="text-inverse font-calango">CALANGO STUDIO</h1>
                     <p id="cover-subtitle" class="text-inverse"></p>
@@ -50,6 +50,17 @@
                         <img id="scroll-image" src="scroll.png" height="30px" />
                     </div>
                 </div>
+
+                <!-- MOBILE MODE -->
+                <div class="col-sm-10 col-xm-10 hidden-md hidden-lg hidden-xl text-center">
+                    <h1 class="text-inverse font-calango">CALANGO STUDIO</h1>
+                    <p id="cover-subtitle" class="text-inverse"></p>
+                    <div>
+                        <img id="scroll-image" src="scroll.png" height="30px" />
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -86,7 +97,7 @@
                         <i class="fa fa-android"></i> Play Store)
                     </a>
                     <br/>
-                    <a class="press-kit" href="pdf/rupert.pdf" target="_blank">Press-kit</a>
+                    <a id="rupert-pdf" class="press-kit" href="pdf/rupert.pdf" target="_blank">Press-kit</a>
                 </div>
             </div>
         </div>
@@ -116,7 +127,7 @@
                         <i class="fa fa-android"></i> Play Store)
                     </a>
                     <br/>
-                    <a class="press-kit" href="pdf/spacejay.pdf" target="_blank">Press-kit</a>
+                    <a id="space-jay-pdf" class="press-kit" href="pdf/spacejay.pdf" target="_blank">Press-kit</a>
                 </div>
             </div>
         </div>
@@ -149,7 +160,7 @@
                     </p>
                 </div>
 
-                <div class="hidden-md hidden-lg hidden-xl">
+                <div class="col-sm-10 col-xs-10 hidden-md hidden-lg hidden-xl">
                     <p>
                         <a class="twitter-timeline" href="https://twitter.com/calangoSTD" data-height="350">&nbsp; Tweets by calangoSTD&nbsp;</a>
                         <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

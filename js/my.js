@@ -43,6 +43,7 @@ $(document).ready(function() {
         $("#rupert-content-2").html(mLanguage["content-2"]);
         $("#rupert-content-3").html(mLanguage["content-3"]);
         $("#rupert-content-4").html(mLanguage["content-4"]);
+        $("#rupert-pdf").attr("href", "pdf/" + mLanguage["pdf"]);
 
         //SpaceJay
         mLanguage = activeLanguage.spacejay;
@@ -52,6 +53,7 @@ $(document).ready(function() {
         $("#space-jay-content-2").html(mLanguage["content-2"]);
         $("#space-jay-content-3").html(mLanguage["content-3"]);
         $("#space-jay-content-4").html(mLanguage["content-4"]);
+        $("#space-jay-pdf").attr("href", "pdf/" + mLanguage["pdf"]);
 
         //About us
         mLanguage = activeLanguage.about;

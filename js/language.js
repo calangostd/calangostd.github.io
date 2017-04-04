@@ -14,6 +14,7 @@ var language = {
         rupert: {
             'title': 'Rupert',
             'release-date': '2017',
+            'pdf': 'rupert-pt.pdf',
             'content-1': 'Guie Rupert até sua missão de recuperar um misterioso objeto roubado de seu amigo.',
             'content-2': 'Controlar Rupert é simples e diferente de outras experiências mobile, não existe ataques ou armas, utilize apenas sua habilidade e raciocínio para completar os cenários.',
             'content-3': 'Inspirado em jogos da era do 16bits, toda sua simplicidade faz qualquer tipo de jogador se encantar e se sentir desafiado.',
@@ -22,6 +23,7 @@ var language = {
         spacejay: {
             'title': 'Space Jay',
             'release-date': '2014',
+            'pdf': 'space-jay-pt.pdf',
             'content-1': 'Space Jay é um jogo casual extremamente desafiador proposto para os jogadores casuais até os mais hardcores.',
             'content-2': 'Possuindo um sistema de Placar online você pode disputar com seus amigos e ser o melhor.',
             'content-3': 'Não basta apenas atirar em Space Jay, trabalhe sua memória para acertar os oponentes certos e aumentar rapidamente seus pontos.',
@@ -55,6 +57,7 @@ var language = {
         rupert: {
             'title': 'Rupert',
             'release-date': '2017',
+            'pdf': 'rupert-en.pdf',
             'content-1': 'Guide Rupert to his quest to retrieve a mysterious object stolen from his friend.',
             'content-2': 'Controlling Rupert is simple and different from other mobile experiences, there are no attacks or weapons, just use your ability and logic to complete the scenarios.',
             'content-3': 'Inspired by 16bits era games, all its simplicity makes any type of player delight and feel challenged.',
@@ -63,6 +66,7 @@ var language = {
         spacejay: {
             'title': 'Space Jay',
             'release-date': '2014',
+            'pdf': 'space-jay-en.pdf',
             'content-1': 'Space Jay is an extremely challenging casual game proposed for casual gamers up to hardcore.',
             'content-2': 'Possessing a Online Score system you can dissuade with your friends and be the best.',
             'content-3': 'Do not just shoot Space Jay, work your memory to hit the right opponents and quickly increase your points.',
