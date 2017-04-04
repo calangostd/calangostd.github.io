@@ -73,7 +73,7 @@ a:hover {
 
 #cover-top-title {
     position: absolute;
-    margin-top: 17%;
+    margin-top: 10%;
 }
 
 #cover-top-container {
@@ -93,7 +93,7 @@ a:hover {
 
 @media(max-width:576px) {
     #cover-top-title {
-        margin-top: 10%;
+        margin-top: 7%;
     }
     #menu {
         width: auto;
