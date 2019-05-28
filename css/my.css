@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    color: #F0A830 !important;
+    color: #f1c40f !important;
     font-weight: bold;
     margin-top: 0px;
     font-size: 32px;
@@ -25,7 +25,7 @@ h2 {
 
 h3 {
     margin-top: 0px;
-    color: #F07818 !important;
+    color: #c49e0a !important;
 }
 
 a {
@@ -71,9 +71,21 @@ a:hover {
     font-size: 32px;
 }
 
+.cover-subtitle{
+    color: #c49e0a;
+    margin-top: 20px;
+    background: black;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
 #cover-top-title {
     position: absolute;
     margin-top: 10%;
+    left: 18%;
+    right: 18%;
 }
 
 #cover-top-container {
@@ -91,11 +103,32 @@ a:hover {
     font-size: 24px;
 }
 
+@media(max-width:1024px){
+    .cover-subtitle{
+        margin-left: 15%;
+        margin-right: 15%;
+    }  
+}
+
+@media(max-width:720px){
+    .cover-subtitle{
+        margin-left: 12%;
+        margin-right: 12%;
+    }  
+}
+
 @media(max-width:576px) {
     #cover-top-title {
         margin-top: 7%;
+        left: 0%;
+        right: 0%;
     }
     #menu {
         width: auto;
     }
+
+.cover-subtitle{
+    margin-left: 1%;
+    margin-right: 1%;
+}
 }

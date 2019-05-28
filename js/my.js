@@ -28,7 +28,7 @@ $(document).ready(function() {
 
         //Cover
         mLanguage = activeLanguage.cover;
-        $("#cover-subtitle").html(mLanguage["subtitle"]);
+        $(".cover-subtitle").html(mLanguage["subtitle"]);
 
         //Games
         mLanguage = activeLanguage.games;
